@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-project(color_spaces)
+project(image_blender)
 
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/build;${CMAKE_MODULE_PATH}")
@@ -17,12 +17,11 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
-# Add Color Space Converter Executable
-add_executable(color_space_converter
-        src/color_space_converter.cpp
-        src/main.cpp)
+# Add Image Blender Executable
+add_executable(image_blender
+        src/image_blender.cpp)
 
-target_link_libraries(color_space_converter
+target_link_libraries(image_blender
   /usr/local/lib/libopencv_core.so
   /usr/local/lib/libopencv_highgui.so
   /usr/local/lib/libopencv_imgcodecs.so
@@ -30,4 +29,4 @@ target_link_libraries(color_space_converter
 )
 
 # Add Install Targets
-# install (TARGETS color_space_converter DESTINATION bin)
+# install (TARGETS image_blender DESTINATION bin)
