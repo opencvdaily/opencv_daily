@@ -1,6 +1,6 @@
 /**
  * @file thresholding.cpp
- * @brief Illustrates OpenCV functionality for blending images
+ * @brief Illustrates Segmentation of an image using Simple Thresholding in OpenCV
  * @author opencv_daily
  * Contact: opencvdaily@gmail.com
  */
